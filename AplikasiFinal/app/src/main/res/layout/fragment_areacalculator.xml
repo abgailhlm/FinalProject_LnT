@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".areacalculatorFragment">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Area Calculator" />-->
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingBottom="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Area Calculator"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30sp"
+                android:layout_marginBottom="50dp"
+                />
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_secondary90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Square"
+                    android:textColor="@color/material_dynamic_secondary10"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="side length (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/sideSquare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/squareButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#4d4dae"
+                    android:text="Calculate" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Square Area (cm²):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/areaSquare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:text="Area"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_secondary90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Triangle"
+                    android:textColor="@color/material_dynamic_secondary10"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="219dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="base length (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/baseTriangle"
+                        android:layout_width="167dp"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="218dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="height length (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/heightTriangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:backgroundTint="#4d4dae"
+                    android:id="@+id/triangleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Calculate" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Triangle Area (cm²):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/areaTriangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:text="Area"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_secondary90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Circle"
+                    android:textColor="@color/material_dynamic_secondary10"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="radius length (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/radiusCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/circleButton"
+                    android:backgroundTint="#4d4dae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Calculate" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Circle Area (cm²):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/areaCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:text="Area"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

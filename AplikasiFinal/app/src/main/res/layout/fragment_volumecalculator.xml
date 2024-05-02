@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".volumecalculatorFragment">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Volume Calculator" />-->
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingBottom="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Volume Calculator"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="50dp"
+                />
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_secondary90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Cuboid"
+                    android:textColor="@color/material_dynamic_secondary10"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="length (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/lengthCuboid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="breadth (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/breadthCuboid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="height (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/heightCuboid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/cuboidButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#4d4dae"
+                    android:text="Calculate" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Cuboid Volume (cm³):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/volumeCuboid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:text="Volume"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_secondary90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Pyramid"
+                    android:textColor="@color/material_dynamic_secondary10"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="219dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="base area (cm²):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/basePyramid"
+                        android:layout_width="167dp"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="218dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="height (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/heightPyramid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:backgroundTint="#4d4dae"
+                    android:id="@+id/pyramidButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Calculate" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Pyramid Volume (cm³):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/volumePyramid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:text="Volume"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_dynamic_secondary90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Cylinder"
+                    android:textColor="@color/material_dynamic_secondary10"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="radius length (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/radiusCylinder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="height (cm):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/heightCylinder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="in centimetres"
+                        android:padding="20dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/cylinderButton"
+                    android:backgroundTint="#4d4dae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Calculate" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Cylinder Volume (cm³):"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/volumeCylinder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:text="Volume"
+                        android:textColor="@color/material_dynamic_secondary10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
